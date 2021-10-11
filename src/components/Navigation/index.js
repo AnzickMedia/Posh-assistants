@@ -46,18 +46,22 @@ const NavigationAuth = ({ authUser }) => (
 
 const NavigationNonAuth = () => (
   <ul className={Styles.o_nav}>
-    <li>
-      <Link to={ROUTES.LANDING}><img src={Logo} alt="Logo Posh Assistants" width="200px"/></Link>
-    </li>
-    <li>
-      <Link to={ROUTES.LANDING}>HOME</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.SIGN_IN}>JOBS</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.SIGN_IN}>ABOUT US</Link>
-    </li>
+
+      <li>
+        <Link to={ROUTES.LANDING}><img src={Logo} alt="Logo Posh Assistants" width="200px" /></Link>
+      </li>
+      <li>
+        <Link to={ROUTES.LANDING}>HOME</Link>
+      </li>
+      <li>
+        <Link to={ROUTES.SIGN_IN}>JOBS</Link>
+      </li>
+      <li>
+        <Link to={ROUTES.SIGN_IN}>ABOUT US</Link>
+      </li>
+    <div>
+
+    </div>
   </ul>
 );
 

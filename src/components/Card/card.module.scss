@@ -1,0 +1,51 @@
+@use '../../base';
+
+.o_card_container{
+  @include base.Mflex;
+
+  margin-bottom: 3rem;
+
+  border-radius: 5px;
+  background-color: #fff;
+  width: 50rem;
+
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+
+  .o_card_info{
+    @include base.Mflex($direction: column, $align: flex-start);
+
+    padding: 0 4rem 0 2rem;
+    h2, h3{
+      font-family: base.$font-titles;
+      margin: 0;
+      color: #3E6614;
+      margin-bottom: 0.5rem;
+    }
+    h3{
+      background-color: #D0E0C6;
+    }
+    p{
+      margin: 0;
+      font-family: base.$font-paragraph;
+      font-size: 0.8rem;
+      font-weight: lighter;
+      color: #000;
+    }
+  }
+}
+.o_button{
+  text-decoration: none;
+  background-color: #fff;
+  padding: 5px 3rem;
+  color: #3E6614;
+  border: #3E6614 solid 2px;
+  border-radius: 2rem;
+  transition: all .3s ease;
+}
+
+.o_button:hover{
+   background-color: #3E6614;
+   color: #fff;
+}

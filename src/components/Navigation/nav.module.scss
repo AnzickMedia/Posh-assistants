@@ -21,7 +21,7 @@
     li:not(:last-child) {
         display: flex;
         align-items: center;
-        margin-right: 1.5rem;
+        margin-right: 3rem;
     }
 
     a {
@@ -36,7 +36,12 @@
         opacity: .5;
     }
 
+    li:first-child{
+        margin-right: 5rem;
+    }
+    
 } 
+
 .o_menu{
     display: flex;
     flex-direction: row;

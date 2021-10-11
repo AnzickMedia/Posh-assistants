@@ -1,0 +1,10 @@
+$primary-color: #3E6614;
+$font-titles : 'Merriweather', serif;
+$font-paragraph : 'Merriweather Sans', serif;
+
+@mixin Mflex($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+  }

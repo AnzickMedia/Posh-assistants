@@ -1,0 +1,20 @@
+@use '../../../base';
+
+.features{
+    display: flex;
+    background: url(../../../images/home-background-featured-B.png) no-repeat;
+
+    .imagecontainer{
+        width: 35%;
+    } 
+    
+    .jobs{
+        width: fit-content;
+        @include base.Mflex($direction: column, $align: flex-start);
+        .more{
+            align-self: center;
+            text-decoration: none;
+        }
+    }
+}
+

@@ -1,0 +1,23 @@
+@use '../../base';
+
+.footer{
+    @include base.Mflex($justify: space-between);
+    background: #000;
+    padding: 3rem 6rem; 
+    h3{
+        margin: 0;
+        margin-bottom: 0.5rem;
+        color: #76BA43;
+    }
+    p{
+        font-size: .8rem;
+        margin: 0;
+        color: #fff;
+    }
+    .footer_info{
+        @include base.Mflex;
+        :first-child{
+            margin-right: 8rem;
+        }
+    }
+}

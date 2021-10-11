@@ -1,0 +1,8 @@
+@use '../../../base';
+
+.containerIT{
+    @include base.Mflex($direction: column);
+    width: 17rem;
+    text-align: center;
+    margin: 0 2rem;
+}

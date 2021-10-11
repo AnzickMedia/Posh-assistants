@@ -1,0 +1,30 @@
+@use '../../base';
+
+.banner{
+    @include base.Mflex($direction: column);
+    text-align: center;
+    background: url(../../images/home-banner01.png) center center;
+    background-size: cover;
+    color: #fff;
+    padding: 8rem 0;
+    img{
+        height: 10rem
+    }
+}
+
+.homeinfo{
+    @include base.Mflex;
+    background-image : url(../../images/home-background-01.png);
+    background-size: cover;
+    padding: 6rem 0;
+    color: base.$primary-color;
+    h2{
+        margin: 1rem 0 0 0;
+    }
+}
+
+.testimonials{
+    background-image : url(../../images/home-background-02.png);
+    background-size: cover;
+    padding: 6rem 0; 
+}

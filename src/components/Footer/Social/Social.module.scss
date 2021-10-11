@@ -1,0 +1,9 @@
+@use '../../../base';
+
+.social{
+    @include base.Mflex($justify: flex-start);
+    img{
+        width: 20px;
+        margin: 0 5px 0 0 !important;
+    }
+}
