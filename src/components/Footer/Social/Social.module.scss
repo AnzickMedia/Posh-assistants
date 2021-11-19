@@ -2,6 +2,7 @@
 
 .social{
     @include base.Mflex($justify: flex-start);
+    margin-bottom: 0.6rem;
     img{
         width: 20px;
         margin: 0 5px 0 0 !important;

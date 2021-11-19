@@ -1,5 +1,4 @@
 import React from 'react';
-import Card from '../Card/Card';
 import FeaturedJobs from './FeaturedJobs/FeaturedJobs';
 import Styles from './Home.module.scss'
 import IconText from './IconText/IconText';
@@ -20,13 +19,7 @@ const Landing = () => (
     <div className={Styles.testimonials}>
       <img src="" alt="" />
     </div>
-    <div className={Styles.subscribe}>
-      <h2>
-        Subscribe to our newsletter!
-      </h2>
-      <input type="text" />
-      <button>Subscribe</button>
-    </div>
+    
   </div>
 );
 

@@ -9,6 +9,7 @@ import * as ROLES from '../../constants/roles';
 import Styles from './nav.module.scss'
 
 import Logo from '../../images/POSH-logo.svg'
+import Button from '../Card/Button';
 
 const Navigation = () => (
   <AuthUserContext.Consumer>
@@ -45,8 +46,8 @@ const NavigationAuth = ({ authUser }) => (
 );
 
 const NavigationNonAuth = () => (
+  <div className={Styles.navigator}>
   <ul className={Styles.o_nav}>
-
       <li>
         <Link to={ROUTES.LANDING}><img src={Logo} alt="Logo Posh Assistants" width="200px" /></Link>
       </li>
@@ -54,15 +55,17 @@ const NavigationNonAuth = () => (
         <Link to={ROUTES.LANDING}>HOME</Link>
       </li>
       <li>
-        <Link to={ROUTES.SIGN_IN}>JOBS</Link>
+        <Link to={ROUTES.JOBS}>JOBS</Link>
       </li>
       <li>
         <Link to={ROUTES.SIGN_IN}>ABOUT US</Link>
       </li>
-    <div>
-
-    </div>
   </ul>
+    <div className={Styles.sign}>
+      <Button route={ROUTES.SIGN_IN} text="SIGN IN"></Button>
+    </div>
+
+  </div>
 );
 
 export default Navigation;

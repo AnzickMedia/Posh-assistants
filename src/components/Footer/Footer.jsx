@@ -10,24 +10,35 @@ import linkedin from "../../images/linkedin.svg"
 
 export default function Footer() {
     return (
-        <div className={Styles.footer}>
-            <div className={Styles.footer_info}>
+        <>
+            <div className={Styles.subscribe}>
+                <h2>
+                    Subscribe to our newsletter!
+                </h2>
                 <div>
-                    <h3> Loren ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consec <br /> <br />
-                        Lorem ipsum dolor sit amet, consec <br /> <br />
-                        Lorem ipsum dolor sit amet, consec <br /> <br />
-                        Lorem ipsum dolor sit amet, consec</p>
-                </div>
-                <div>
-                    <h3> Loren ipsum</h3>
-                    <Social brandlogo={facebook} brandname="facebook" />
-                    <Social brandlogo={instagram} brandname="instagram" />
-                    <Social brandlogo={twitter} brandname="twitter" />
-                    <Social brandlogo={linkedin} brandname="linkedin" />
+                    <input type="email" placeholder="E-mail"/>
+                    <button>Subscribe</button>
                 </div>
             </div>
-            <img src={logo} alt="" />
-        </div>
+            <div className={Styles.footer}>
+                <div className={Styles.footer_info}>
+                    <div>
+                        <h3> Loren ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consec <br /> <br />
+                            Lorem ipsum dolor sit amet, consec <br /> <br />
+                            Lorem ipsum dolor sit amet, consec <br /> <br />
+                            Lorem ipsum dolor sit amet, consec</p>
+                    </div>
+                    <div>
+                        <h3> Loren ipsum</h3>
+                        <Social brandlogo={facebook} brandname="facebook" />
+                        <Social brandlogo={instagram} brandname="instagram" />
+                        <Social brandlogo={twitter} brandname="twitter" />
+                        <Social brandlogo={linkedin} brandname="linkedin" />
+                    </div>
+                </div>
+                <img src={logo} alt="" />
+            </div>
+        </>
     );
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Styles from './FeaturedJobs.module.scss';
-import imagen from '../../../images/home-background-featured-B.png'
 import Card from '../../Card/Card';
 import * as ROUTES from '../../../constants/routes';
 
@@ -17,7 +16,7 @@ export default function FeaturedJobs() {
                 <Card />
                 <Card />
                 <Link className={Styles.more} to={ROUTES.LANDING}>
-                    APPLY NOW
+                    See more jobs
                 </Link>
             </div>
         </div>

@@ -3,7 +3,7 @@
 .features{
     display: flex;
     background: url(../../../images/home-background-featured-B.png) no-repeat;
-
+    color: base.$primary-color;
     .imagecontainer{
         width: 35%;
     } 
@@ -11,9 +11,12 @@
     .jobs{
         width: fit-content;
         @include base.Mflex($direction: column, $align: flex-start);
+        
         .more{
+            color: base.$primary-color;
             align-self: center;
             text-decoration: none;
+            margin-bottom: 3rem;
         }
     }
 }

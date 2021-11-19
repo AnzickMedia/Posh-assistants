@@ -6,11 +6,16 @@ import styles from './card.module.scss';
 class Button extends Component {
   render() {
     return (
-      <Link className={styles.o_button} to={ROUTES.LANDING}>
-        APPLY NOW
+      <Link className={styles.o_button} to={this.props.route}>
+        {this.props.text}
       </Link>
     );
   }
+}
+
+Button.defaultProps = {
+  route: ROUTES.LANDING,
+  text: "APPLY NOW",
 }
 
 export default Button;
